@@ -66,20 +66,20 @@
 //
 // delay(1500).then(() => console.log('done'));
 
-const promise1 = new Promise((res, rej) => {
-    setTimeout(() => {
-        // res("reject1");
-        rej("reject1");
-    }, 1000);
-});
-
-
-promise1
-    .catch((t) => t + "catch1")
-    .catch((t) => t + "catch2")
-    .then((t) => t + "then1")
-    .finally((t) => t + "finally")
-    .then((t) => console.log(t)); /// ??
+// const promise1 = new Promise((res, rej) => {
+//     setTimeout(() => {
+//         // res("reject1");
+//         rej("reject1");
+//     }, 1000);
+// });
+//
+//
+// promise1
+//     .catch((t) => t + "catch1")
+//     .catch((t) => t + "catch2")
+//     .then((t) => t + "then1")
+//     .finally((t) => t + "finally")
+//     .then((t) => console.log(t)); /// ??
 
 
 
