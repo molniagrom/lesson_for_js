@@ -36,8 +36,6 @@
 // console.log(bmw === kia)
 
 
-
-
 // function CarCreator(brand, maxSpeed) {
 //     this.brand = brand
 //     this.maxSpeed = maxSpeed
@@ -52,7 +50,6 @@
 
 // const bmw = new CarCreator('bmw', 200)
 // const kia = new CarCreator('kia', 150)
-
 
 
 // console.log(bmw)
@@ -102,7 +99,6 @@
 // console.dir(Car)
 
 
-
 // // console.log(bmw.wheels)
 
 // // bmw.wheels = 6
@@ -111,7 +107,6 @@
 
 
 // Car.compareCars(bmw, kia)
-
 
 
 class Car {
@@ -126,12 +121,12 @@ class Car {
     }
 
     static compareCars(car1, car2) {
-      car1.maxSpeed === car2.maxSpeed
-     ? console.log(`Cars have same speed`)
-     : car1.maxSpeed > car2.maxSpeed
-     ? console.log(`${car1.brand} is faster`)
-     : console.log(`${car2.brand} is faster`);
-  }
+        car1.maxSpeed === car2.maxSpeed
+            ? console.log(`Cars have same speed`)
+            : car1.maxSpeed > car2.maxSpeed
+                ? console.log(`${car1.brand} is faster`)
+                : console.log(`${car2.brand} is faster`);
+    }
 
 }
 
@@ -147,9 +142,6 @@ class SuperCar extends Car {
         super.startEngine()
         console.log(`${this.brand} is fly`)
     }
-
-
-
 }
 
 const superBmw = new SuperCar('super-bmw', 350, true)
